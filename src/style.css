@@ -1,5 +1,48 @@
-@import "bootstrap/dist/css/bootstrap.min.css";
-
-body{
-    background: white;
-}
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #0b8457;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .card {
+    width: 250px;
+    height: 350px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  /* Estilo para filas de símbolos */
+  .top-row, .bottom-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .corner-symbol {
+    font-size: 90px;
+  }
+  
+  /* Valor central */
+  .card-value {
+    text-align: center;
+    font-size: 100px;
+  }
+  
+  /* Colores por palo */
+  .heart, .diamond {
+    color: red;
+  }
+  
+  .spade, .club {
+    color: black;
+  }
+  
